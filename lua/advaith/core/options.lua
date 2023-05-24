@@ -12,11 +12,16 @@ opt.wrap = false
 -- search settings
 opt.ignorecase = true
 opt.smartcase = true
+-- appearence
+opt.termguicolors = true
+opt.background = "dark"
+opt.signcolumn = "yes"
 -- backspace
 opt.backspace = "indent,eol,start"
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
+
 -- clipboard
 opt.clipboard:append("unnamedplus")
 
