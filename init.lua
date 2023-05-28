@@ -6,4 +6,4 @@ require("advaith.plugins.nvim-tree")
 require("advaith.plugins.lualine")
 require("advaith.plugins.telescope")
 require("advaith.plugins.nvim-cmp")
-
+require("advaith.plugins.lsp.mason")

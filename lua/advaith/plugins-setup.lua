@@ -27,7 +27,7 @@ end
 return packer.startup(function(use)
     use("wbthomason/packer.nvim")
     use("nvim-lua/plenary.nvim") -- lua functions
-    use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
+    use("bluz71/vim-moonfly-colors") -- preferred colorscheme
     use("christoomey/vim-tmux-navigator")
     use("szw/vim-maximizer")
     use("tpope/vim-surround")
@@ -47,8 +47,15 @@ return packer.startup(function(use)
     use("L3MON4D3/LuaSnip")
     use("saadparwaiz1/cmp_luasnip")
     use("rafamadriz/friendly-snippets")
-
-
+    -- managing and installing lsp servers
+    use("williamboman/mason.nvim")
+    use("williamboman/mason-lspconfig.nvim")
+    -- configuring the lsp servers
+    use("neovim/nvim-lspconfig")
+    use("hrsh7th/cmp-nvim-lsp")
+    use({"glepnir/lspsaga.nvim", branch = "main"})
+    use("jose-elias-alvarez/typescript.nvim")
+    use("onsails/lspkind.nvim")
     if packer_bootstrap then
         require("packer").sync()
     end
